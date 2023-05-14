@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nokoSocial</title>
+
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="log">
+                TRUST
+            </h1>
+            <div class="search-bar">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="Search for creators, inspirations, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="profile-picture">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------MAIN------------->
+    <main>
+        <div class="container">
+            <!-------------Left------------->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="#">
+                    </div>
+                    <div class="handle">
+                        <h4>Madam Don</h4>
+                        <p class="text-muted">
+                            @don
+                        </p>
+                    </div>
+                </a>
+                <!-------------SideBar------------->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="bi bi-house"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="bi bi-compass"></i></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="bi bi-bell"><small class="notification-count">9+</small></i></i></span>
+                        <h3>Notification</h3>
+                        <!--------Notification Popup------->
+                        <div class="notification-popup" id="notification-close" >
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Tej</b> accepted your friend request
+                                <small class="text-muted">2 Days Ago</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-3.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Krish</b> commented on your post
+                                <small class="text-muted">1 Hour Ago</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-4.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Venks</b> liked your post
+                                <small class="text-muted">1 Hour Ago</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-5.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Stan</b> liked your post
+                                <small class="text-muted">1 Hour Ago</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-5.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>Angel</b> liked your post
+                                <small class="text-muted">1 Hour Ago</small>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-6.jpg">
+                            </div>
+                            <div class="notification-body">
+                                <b>World</b> liked your post
+                                <small class="text-muted">1 Hour Ago</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <span><i class="bi bi-envelope"><small class="notification-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="bi bi-bookmark"></i></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="bi bi-bar-chart"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id ="theme">
+                        <span><i class="bi bi-palette"></i></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="bi bi-gear"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <!------End of Sidebar--------->
+                <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-------------Middle------------->
+            <div class="middle">
+                <!-------------Stories------------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg">
+                        </div>
+                        <p class="name">Lilly</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg">
+                        </div>
+                        <p class="name">Tamarind</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <p class="name">Silly</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg">
+                        </div>
+                        <p class="name">Coming</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-13.jpg">
+                        </div>
+                        <p class="name">Came</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-14.jpg">
+                        </div>
+                        <p class="name">Coming and Going</p>
+                    </div>
+                </div>
+                <!------End Of Storiesss--------->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Don?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!-------------Right------------->
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-13.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Vikrant Rona</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-14.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Hero of Decade</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-15.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Vikram</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-16.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Krish Murthy</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-4.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+
+                                    <img src="./images/profile-17.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Narsimha</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-18.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Simha</h3>
+                                    <small>Dubai, 15 Minutes Ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="bi bi-three-dots"></i></span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-6.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="bi bi-suit-heart"></i></span>
+                                <span><i class="bi bi-at"></i></span>
+                                <span><i class="bi bi-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="bi bi-bookmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg"></span>
+                            <span><img src="./images/profile-18.jpg"></span>
+                            <span><img src="./images/profile-19.jpg"></span>
+                            <p>Liked by <b>James, Steve</b> <b>and </b><b>14 others</b></p>
+
+                        </div>
+
+                        <div class="caption">
+                            <p><b>World</b> Congratulations on the new beginning. <span
+                                    class="hash-tag">#congrats</span></p>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                    </div>
+                    <!-----------End of Feed------------>
+                </div>
+                <!-----------End of Feeds------------>
+            </div>
+            <!-----------End of Middle------------>
+
+            <!-------------Right------------->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="bi bi-pencil-square"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="bi bi-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <!----------Messages Category---------->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <!-------------------Message--------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-14.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Eve</h5>
+                            <p class="text-bold">Are you coming?</p>
+                        </div>
+                    </div>
+                    <!-------------------Message--------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Singh</h5>
+                            <p class="text-bold">looks great!</p>
+                        </div>
+                    </div>
+                    <!-------------------Message--------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Krish</h5>
+                            <p class="text-bold">Cool.. Have fun :) </p>
+                        </div>
+                    </div>
+                    <!-------------------Message--------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Hacker</h5>
+                            <p class="text-bold">Ok dude</p>
+                        </div>
+                    </div>
+                    <!-------------------Message--------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-15.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Malala</h5>
+                            <p class="text-bold">Hope all is ok</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------End Of Messages----------->
+
+                <!---------Friend Requests--------->
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-9.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajio Mastan</h5>
+                                <p class="text-muted">8 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-10.jpg">
+                            </div>
+                            <div>
+                                <h5>Sulthan</h5>
+                                <p class="text-muted">10 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-12.jpg">
+                            </div>
+                            <div>
+                                <h5>Pathan</h5>
+                                <p class="text-muted">49 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-11.jpg">
+                            </div>
+                            <div>
+                                <h5>VJ</h5>
+                                <p class="text-muted">80 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-9.jpg">
+                            </div>
+                            <div>
+                                <h5>Hajio Mastan</h5>
+                                <p class="text-muted">8 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------End of Right-->
+        </div>
+    </main>
+
+    <!------------Theme Customization-------------->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color, and background</p>
+
+            <!--------Font Sizes---------->
+            <div class="font-size">
+                <h4>Font Size</h4>
+
+                <div>
+                    <h6>Aa</h6>
+
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-------Primary Colors------->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!-------Background Colors------->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./index.js"></script>
+</body>
+
+</html>
